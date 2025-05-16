@@ -26,6 +26,8 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
 ```
 brew install opus opusfile
 export PKG_CONFIG_PATH=/usr/local/opt/opus/lib/pkgconfig:/usr/local/opt/opusfile/lib/pkgconfig:$PKG_CONFIG_PATH
+# 具体看安装路径
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
 ```
 
 - windows参考

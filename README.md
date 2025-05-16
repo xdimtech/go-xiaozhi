@@ -16,6 +16,26 @@ go mod download
 or go mod tidy
 ```
 
+- linux参考
+```
+apt install libopus-dev libopusfile-dev
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+```
+
+- macos参考
+```
+brew install opus opusfile
+export PKG_CONFIG_PATH=/usr/local/opt/opus/lib/pkgconfig:/usr/local/opt/opusfile/lib/pkgconfig:$PKG_CONFIG_PATH
+```
+
+- windows参考
+```
+1. 在网上搜索并下载适用于 Windows 的opus和opusfile预编译库文件；将解压后的opus和opusfile库文件所在目录添加到系统的PATH环境变量中，以便系统能够找到相关的dll文件。同时，将opus和opusfile的include目录添加到CPATH环境变量中，将库文件目录添加到LIBRARY_PATH环境变量中
+
+2. 从Opus 官方网站下载opus和opusfile的源码，编译，安装依赖，配置opus路径
+
+```
+
 3. 配置服务:
 编辑 `conf/biz.yaml` 文件，配置必要的参数：
 ```yaml
